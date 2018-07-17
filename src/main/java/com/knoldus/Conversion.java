@@ -2,8 +2,7 @@ package com.knoldus;
 
 import java.util.Scanner;
 
-public class Conversion
-{
+public class Conversion {
     public static void main(String args[]) {
         char us_dollar_sym = 36;
         char pound_sym = 163;
@@ -17,7 +16,6 @@ public class Conversion
         String euro = "Euros";
         String inr = "Indian Rupees";
         double rate;
-
 
 
         System.out.println("Welcome to the Currency Converter\n");
@@ -54,14 +52,11 @@ public class Conversion
         int output = in.nextInt();
 
 
-
         if (choice == output) {
             System.out.println("Same currency no need to convert !");
-        }
-        else
-            {
-                System.out.print("Now enter the input in ->" + inType);
-                double input = in.nextDouble();
+        } else {
+            System.out.print("Now enter the input in ->" + inType);
+            double input = in.nextDouble();
             if (choice == 1 && output == 2) {
                 double dollar_euro_rate = 0.78391;
                 rate = input * dollar_euro_rate;
@@ -106,8 +101,8 @@ public class Conversion
                 System.out.printf("%s" + input + " Pounds to %s = %.2f\n", pound_sym, euro, rate);
             } else if (choice == 3 && output == 4) {
                 double pound_yen_rate = 172.511;
-                rate = input *pound_yen_rate;
-                System.out.printf("%s" + input +" Pounds to %s = %.2f\n", pound_sym, yen, rate);
+                rate = input * pound_yen_rate;
+                System.out.printf("%s" + input + " Pounds to %s = %.2f\n", pound_sym, yen, rate);
             } else if (choice == 3 && output == 5) {
                 double pound_inr_rate = 91.37;
                 rate = input * pound_inr_rate;
@@ -123,7 +118,7 @@ public class Conversion
                 System.out.printf("%s" + input + " Yen to %s = %.2f\n", yen_sym, euro, rate);
             } else if (choice == 4 && output == 3) {
                 double yen_pound_rate = 0.00579135;
-                rate = input *yen_pound_rate;
+                rate = input * yen_pound_rate;
                 System.out.printf("%s" + input + " Yen to %s = %.2f\n", yen_sym, pound, rate);
             } else if (choice == 4 && output == 5) {
                 double yen_inr_rate = 0.62;
